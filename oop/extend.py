@@ -47,3 +47,23 @@ print(string.__len__())
 print(string.__contains__('0809'))
 print(string.index('0809'))
 print(string.upper())
+
+print(dir(dog))
+
+
+
+class MyObject(object):
+    def __init__(self):
+        self.x = 9
+        def power(self):
+            return self.x * self.x
+
+obj = MyObject()
+hasattr(obj, 'x')
+print(obj.x)
+hasattr(obj, 'y')
+setattr(obj, 'y', 19)
+hasattr(obj, 'y')
+print(getattr(obj, 'y'))
+print(obj.y)
+
