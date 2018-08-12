@@ -30,7 +30,7 @@ for x in os.listdir(pp):
     if os.path.isdir(os.path.join(pp, x)):
         print(x)
 
-#列出所有 .py文件
+#列出当前目录所有 .py文件
 bb = [x for x in os.listdir('.') if os.path.isfile(x) and os.path.splitext(x)[1] == '.py']
 #print(bb)
 
