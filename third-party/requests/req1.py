@@ -8,3 +8,4 @@ r = requests.get('https://www.douban.com/search', params={'q':'python', 'cat':'1
 print(r.url)
 print(r.encoding)
 print(r.content)
+
