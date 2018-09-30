@@ -1,0 +1,1 @@
+copy /b  *.ts  C:\study\workspace\python\python-demo\network\videos\11.ts
