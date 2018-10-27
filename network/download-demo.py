@@ -5,27 +5,26 @@
 from urllib import request
 
 print("downloading with urllib")
-#  url0 = 'http://media6.61info.cn/rbkd/course_new/2_12_C6CF34A21FC00001935713DC9F4012B3/15s/2_12_1'   #第11课     58
-#  url0 = 'http://media6.61info.cn/rbkd/course_new/2_8_C6C6252760000001F0AE3730B8AD1DE9/v2/2_8_1'     #第7课       63
-url0 = 'http://media6.61info.cn/rbkd/course_new/2_3_C6C6251B06300001E384F820B38D1346/15s/2_3_1'   #第1课       69
-
-#'http://media6.61info.cn/rbkd/course_new/2_5_C6C62521FD80000166CA1C501D2F17EB/v2/2_5_10.ts'       第2课 165.ts 
-#'http://media6.61info.cn/rbkd/course_new/2_6_C6C62523A55000015D211240FB47CD90/v2/2_6_10.ts'       第3课 160.ts
-
-#http://media6.61info.cn/rbkd/course_new/zhibo/zhibo_30.ts		第4节
+course_id = 15
+#url0 = 'http://media6.61info.cn/rbkd/course_new/2_3_C6C6251B06300001E384F820B38D1346/15s/2_3_1'   #第1课 69
+#url0 = 'http://media6.61info.cn/rbkd/course_new/2_5_C6C62521FD80000166CA1C501D2F17EB/v2/2_5_1'   #    第2课 165.ts 
+#url0 = 'http://media6.61info.cn/rbkd/course_new/2_6_C6C62523A55000015D211240FB47CD90/v2/2_6_1'       #第3课 160.ts
+#url0 = 'http://media6.61info.cn/rbkd/course_new/zhibo/zhibo_3'   
 #http://media6.61info.cn/rbkd/course_new/zhibo/zhibo_31.ts
-
-#http://media6.61info.cn/rbkd/course_new/2_7_C6C625256BB0000151408E005A2771E0/v1/2_7_10.ts			第5节 153.ts
-#http://media6.61info.cn/rbkd/course_new/2_36_9E6737FFD33843CF943E495BF3740590/15s/2_36_10.ts		第6节 136.ts
-#http://media6.61info.cn/rbkd/course_new/2_10_C6CB2DF69A3000016EF9D3A0402415E2/v2/2_10_10.ts			第8节 167.ts
-#http://media6.61info.cn/rbkd/course_new/2_11_C6CCF207B4300001919B17396F808D30/v1/2_11_10.ts    167.ts   第9节
-#http://media6.61info.cn/rbkd/course_new/1_12_F865BD9BB064406FB3BBB87301D9B424/15s/1_12_10.ts    152.ts  第10节
-#http://media6.61info.cn/rbkd/course_new/zhibo/zhibo_30.ts 
+#第4节    31.ts
+#url0 = 'http://media6.61info.cn/rbkd/course_new/2_7_C6C625256BB0000151408E005A2771E0/v1/2_7_1'  #第5节 153.ts
+#url0 = 'http://media6.61info.cn/rbkd/course_new/2_36_9E6737FFD33843CF943E495BF3740590/15s/2_36_1'   #第6节 136.ts
+#url0 = 'http://media6.61info.cn/rbkd/course_new/2_8_C6C6252760000001F0AE3730B8AD1DE9/v2/2_8_1'            #第7课 162.ts
+#url0 = 'http://media6.61info.cn/rbkd/course_new/2_10_C6CB2DF69A3000016EF9D3A0402415E2/v2/2_10_1'     #第8节 167.ts
+#url0 = 'http://media6.61info.cn/rbkd/course_new/2_11_C6CCF207B4300001919B17396F808D30/v1/2_11_1'      #167.ts   第9节
+#url0 = 'http://media6.61info.cn/rbkd/course_new/1_12_F865BD9BB064406FB3BBB87301D9B424/15s/1_12_1'    #152.ts  第10节
+#url0 = 'http://media6.61info.cn/rbkd/course_new/2_12_C6CF34A21FC00001935713DC9F4012B3/15s/2_12_1'          #第11课     157.ts
+#url0 = 'http://media6.61info.cn/rbkd/course_new/zhibo/zhibo_3' 
 #http://media6.61info.cn/rbkd/course_new/zhibo/zhibo_31.ts 
 #第12节
-#http://media6.61info.cn/rbkd/course_new/2_102_132462F1FD9D4FF8952F09F8DF206881/v1/2_102_20.ts   258.ts  第13节
-#http://media6.61info.cn/rbkd/course_new/2_14_C6D3A02D38700001756A1C50A2F01F43/15s/2_14_10.ts    159.ts  第14节
-#http://media6.61info.cn/rbkd/course_new/2_15_C6D5E124FAA000013DD16CB014D0FCB0/15s/2_15_10.ts    168.ts  第15节
+#url0 = 'http://media6.61info.cn/rbkd/course_new/2_102_132462F1FD9D4FF8952F09F8DF206881/v1/2_102_2'  #258.ts  第13节
+#url0 = 'http://media6.61info.cn/rbkd/course_new/2_14_C6D3A02D38700001756A1C50A2F01F43/15s/2_14_1'    #159.ts  第14节
+url0 = 'http://media6.61info.cn/rbkd/course_new/2_15_C6D5E124FAA000013DD16CB014D0FCB0/15s/2_15_1'   #168.ts  第15节
 #http://media6.61info.cn/rbkd/course_new/2_53_1B11A843D4E54B06816D8F2F670E3F47/15s/2_53_10.ts    158.ts  第16节
 #http://media6.61info.cn/rbkd/course_new/2_54_07F68CBE26A040E59CF74C363174585D/15s/2_54_10.ts    154.ts  第17节
 #http://media6.61info.cn/rbkd/course_new/2_20_C6E1426C85E00001437716C432951CE9/v2/2_20_10.ts     168.ts  第18节
@@ -50,4 +49,4 @@ for item in range(0, 69):
     print(url)
 
     # 第一个参数网络地址；第二个参数 本地保存位置
-    request.urlretrieve(url,"./videos/1/"+file)
+    request.urlretrieve(url,"./videos/"+ str(course_id) +"/"+file)
