@@ -1,7 +1,4 @@
-﻿
- 
-
- # import urllib
+﻿ # import urllib
 from urllib import request
 
 print("downloading with urllib")
